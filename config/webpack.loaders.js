@@ -64,10 +64,17 @@ const postcssLoader = {
   },
 };
 
+const miniCss = {
+  loader: MiniCssExtractPlugin.loader,
+  options: {
+    publicPath: ''
+  }
+}
+
 const css = {
   test: /\.css$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === 'production' ? miniCss : styleLoader,
     cssLoader,
     postcssLoader,
   ],
@@ -76,7 +83,7 @@ const css = {
 const sass = {
   test: /\.s[c|a]ss$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === 'production' ? miniCss : styleLoader,
     cssLoader,
     postcssLoader,
     {
@@ -91,7 +98,7 @@ const sass = {
 const less = {
   test: /\.less$/,
   use: [
-    config.env === 'production' ? MiniCssExtractPlugin.loader : styleLoader,
+    config.env === 'production' ? miniCss : styleLoader,
     cssLoader,
     postcssLoader,
     {

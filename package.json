@@ -34,7 +34,7 @@
     "lint:js": "./node_modules/.bin/eslint \"src/**/*.js\"",
     "lint:styles": "stylelint \"src/**/*.scss\"",
     "build": "cross-env NODE_ENV=production webpack --config ./config/webpack.config.js",
-    "copy": "rm -rf ~/projects/umer4ik.github.io/abc && cp -R dist/ ~/projects/umer4ik.github.io/abc",
+    "copy": "rm -rf ~/projects/umer4ik.github.io/moonglade && cp -R dist/ ~/projects/umer4ik.github.io/moonglade",
     "build:dist": "npm run build && npm run copy",
     "deploy": "node ./config/site.deploy.js"
   },
