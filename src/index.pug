@@ -6,6 +6,8 @@ html(lang="en")
     meta(name="description", content="")
     title Static Site Boilerplate
   body
-    include parts/header.pug
-    .content Content
-    include parts/footer.pug
+    main.main
+      include parts/header/header.pug
+      include parts/intro/intro.pug
+      .content Content
+      include parts/footer.pug

@@ -1,0 +1,38 @@
+.intro {
+  height: 100vh;
+  min-height: 500px;
+  position: relative;
+  &__inner {
+    @include section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+  &__text {
+    @include cs;
+    color: #fff;
+    font-size: 120px;
+  }
+  &__scroll {
+    color: rgba(#fff, .7);
+    position: absolute;
+    bottom: 58px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__scroll-infinite {
+    @include cs;
+    font-size: 25px;
+    line-height: 12px;
+  }
+  &__scroll-decor {
+    @include cs;
+    font-size: 20px;
+  }
+}

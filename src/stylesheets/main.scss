@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'California Sans';
+  src:
+    url('../fonts/californiasansmoonglade-regular-webfont.woff2') format('woff2'),
+    url('../fonts/californiasansmoonglade-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Plain';
+  src: url('../fonts//plain-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #000;
+  font-family: 'Plain', sans-serif;
+}

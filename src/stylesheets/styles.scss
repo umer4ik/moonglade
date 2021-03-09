@@ -1,1 +1,6 @@
-// Add your styles here
+// Load CSS Reset from NPM
+@import "~normalize.css";
+@import "mixins.scss";
+@import "main.scss";
+@import "../parts/header/header.scss";
+@import "../parts/intro/intro.scss";
